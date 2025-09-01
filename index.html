@@ -71,8 +71,8 @@
 											<div class="inner">
 												<h4>PhD Candidate, BHT</h4>
 												<h5>2021 - ongoing, BHT</h5>
-												<p>eXplainable AI, Fine Grained Image Analysis, Computer Vision, Deep Learning<br>
-												Under the supervision of <b>Prof. Dr. Felix Bießmann</b> and <b>Prof. Dr. Frank Haußer</b>.</p>
+												<p>Uncertainty in XAI<br>
+												Under the supervision of <b>Prof. Dr. Felix Bießmann</b>, <b>Prof. Dr. Frank Haußer</b> and <b>Prof. Dr. Benjamin Blankertz</b>.</p>
 											</div>
 										
 										
@@ -102,8 +102,7 @@
 											<div class="inner">
 												<h4>Internship, Fraunhofer IPK Berlin</h4>
 												<h5>2018</h5>
-												<p>Department for 3D-Printing: written a web app in JavaScript and PHP for supervising the 3D-printing process. See 
-												<a target="_blank" rel="noopener noreferrer" href="https://www.ipk.fraunhofer.de/">website</a></p>
+												<p>Department for 3D-Printing: written a web app in JavaScript and PHP for supervising the 3D-printing process.</p>
 											</div>
 										
 										
@@ -132,11 +131,49 @@
 									<h3>Publications</h3>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/uxai.png" alt="" height="350px"/></a>
+											<a href="#" class="image"><img src="images/depth_intervals.png" alt="" style="width: 50%; display: block; margin: 0 auto;" /></a>
+											<div class="inner">
+												<h4>Uncertainty-Guided Expert-AI Collaboration for Efficient Soil Horizon Annotation</h4>
+												<h5><i>Teodor Chiaburu, Vipin Singh, Felix Bießmann, Frank Haußer</i></h5>
+												<h5>Under review</h5>
+												<p>In this work, we apply conformal prediction to <b>SoilNet</b>, a multimodal multitask model for describing soil profiles. 
+												We design a simulated human-in-the-loop (HIL) annotation pipeline, where a limited budget for obtaining  ground truth annotations 
+												from domain experts is available when model uncertainty is high. Our experiments show that conformalizing SoilNet leads to more efficient 
+												annotation in regression tasks and comparable performance scores in classification tasks under the same annotation budget when tested 
+												against its non-conformal counterpart.
+												Code and paper will be made available after the peer review process.
+											</div>
+										</article>
+									</div>	
+									
+									<div class="features">
+										<article>
+											<a href="#" class="image"><img src="images/BGR_Tasks_cropped.png" alt=""  /></a>
+											<div class="inner">
+												<h4>SoilNet: A Multimodal Multitask Model for Hierarchical Classification of Soil Horizons</h4>
+												<h5><i>Teodor Chiaburu, Vipin Singh, Felix Bießmann, Frank Haußer</i></h5>
+												<h5>Under review</h5>
+												<p>In this work, we propose <b>SoilNet</b> - a multimodal multitask model to tackle this problem through a structured modularized 
+												pipeline. Our approach integrates image data and geotemporal metadata to first predict depth markers, segmenting the soil profile 
+												into horizon candidates. Each segment is characterized by a set of horizon-specific morphological features. Finally, horizon labels 
+												are predicted based on the multimodal concatenated feature vector, leveraging a graph-based label representation to account for the 
+												complex hierarchical relationships among soil horizons. Our method is designed to address complex hierarchical classification, where 
+												the number of possible labels is very large, imbalanced and non-trivially structured. We demonstrate the effectiveness of our approach 
+												on a real-world soil profile dataset.
+												
+												All the code and experiments can be found in our <a target="_blank" rel="noopener noreferrer" href="https://github.com/calgo-lab/BGR">repository</a>.
+												Download preprint <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2508.03785">here</a>.</p>
+											</div>
+										</article>
+									</div>	
+									
+									<div class="features">
+										<article>
+											<a href="#" class="image"><img src="images/uxai.png" alt="" style="width: 100%; height: 300px; display: block; margin: 0 auto;"/></a>
 											<div class="inner">
 												<h4>Uncertainty Propagation in XAI: A Comparison of Analytical and Empirical Estimators</h4>
 												<h5><i>Teodor Chiaburu, Felix Bießmann, Frank Haußer</i></h5>
-												<h5>Accepted at WCXAI 2025, Istanbul</h5>
+												<h5>Presented at WCXAI 2025, Istanbul</h5>
 												<p>This paper introduces a framework to measure uncertainty in XAI explanations, 
 												which stems from input data and model parameter variations. We use analytical and 
 												empirical methods to estimate how this uncertainty affects explanations and evaluate 
@@ -155,13 +192,13 @@
 											<div class="inner">
 												<h4>Towards a Global Spatial Machine Learning Model for Seasonal Groundwater Level Predictions in Germany</h4>
 												<h5><i>Stefan Kunz, Alexander Schulz, Maria Wetzel, Maximilian Nölscher, Teodor Chiaburu, Felix Biessmann, Stefan Broda</i></h5>
-												<h5>Published in EGUsphere - Copernicus Publications, 2025</h5>
+												<h5>Published in HESS - Hydrology and Earth System Sciences, 2025</h5>
 												<p>Accurate groundwater level predictions are essential for a sustainable groundwater management. 
 												This study applies two machine learning (ML) models—N-HiTS and TFT—to seasonally predict groundwater 
 												levels for 5,288 monitoring wells across Germany. Both approaches provided good predictions across 
 												diverse hydrogeological conditions, whereby N-HiTS outperformed the TFT. Both models showed better 
 												perforance in areas with high data density, in lowlands, and when distinct seasonal dynamics occurred.
-												Download paper <a target="_blank" rel="noopener noreferrer" href="https://egusphere.copernicus.org/preprints/2024/egusphere-2024-3484/">here</a>.</p>
+												Download paper <a target="_blank" rel="noopener noreferrer" href="https://hess.copernicus.org/articles/29/3405/2025/">here</a>.</p>
 											</div>
 										</article>
 									</div>	
@@ -184,7 +221,7 @@
 							
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/teacher.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/design_task2.png" alt="" /></a>
 											<div class="inner">
 												<h4>Confident Teacher, Confident Student? 
 												A Novel User Study Design for Investigating the Didactic Potential of Explanations and their Impact on Uncertainty</h4>
@@ -201,7 +238,7 @@
 									
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/approach_1.png" alt="" /></a>
+											<a href="#" class="image"><img src="images/approach_1.png" alt="" style="width: 75%; display: block; margin: 0 auto;" /></a>
 											<div class="inner">
 												<h4>Uncertainty in XAI: Human Perception and Modeling Approaches</h4>
 												<h5><i>Teodor Chiaburu, Frank Haußer, Felix Bießmann</i></h5>
@@ -253,7 +290,7 @@
 									
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/lowcost.png" alt="" height="500px"/></a>
+											<a href="#" class="image"><img src="images/lowcost.png" alt="" style="width: 75%; display: block; margin: 0 auto;"/></a>
 											<div class="inner">
 												<h4>Low Cost Machine Vision for Insect Classification</h4>
 												<h5><i>Ingeborg Beckers, Danja Brandt, Teodor Chiaburu, Frank Haußer, Henning Schmidt, Ilona Schrimpf, Alexandra Stadel, Martin Tschaikner</i></h5>
@@ -302,7 +339,7 @@
 									<h3>Projects</h3>
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/boden.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/boden.jpg" alt="" style="width: 75%; display: block; margin: 0 auto;" /></a>
 											<div class="inner">
 												<h4>BGR - Soil Horizon Prediction</h4>
 												<p>Localizing and classifying soil horizons in multimodal input (visual and tabular).
@@ -313,7 +350,7 @@
 									
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/WildbieneBlume.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/WildbieneBlume.jpg" alt="" style="width: 75%; display: block; margin: 0 auto;" /></a>
 											<div class="inner">
 												<h4>KInsecta and beexplainable</h4>
 												<p>Investigating interpretability in ML neural networks trained to recognize wildbee species on images. 
@@ -324,7 +361,7 @@
 									
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/riwwer_logo.png" alt="" /></a>
+											<a href="#" class="image"><img src="images/riwwer_logo.png" alt="" style="width: 75%; display: block; margin: 0 auto;" /></a>
 											<div class="inner">
 												<h4>RIWWER</h4>
 												<p><b>R</b>eduction of the <b>I</b>mpact of untreated <b>W</b>aste <b>W</b>ater on the <b>E</b>nvironment in case of torrential <b>R</b>ain</p>
@@ -394,13 +431,15 @@
 						<!-- Six -->
 							<section id="six">
 								<div class="container">
-									<h3>Teaching</h3>
+									<h3>Teaching/Thesis Supervision</h3>
 									<div class="features">
 										<div class="inner">
 											<h4>Summer Term 2025, BHT</h4>
 												<ul>
 													<li>Data Science Programming with Python (Bachelor Media Informatics)</li>
-													<li>Data Science Workflow (Master Data Science)</li>
+													<li>Data Science Workflow on a K8s Cluster(Master Data Science)</li>
+													<li>Co-supervision Bachelor's Thesis: <i>Training and Evaluation of Machine Learning Models for Damage Detection and Classification of Gas Turbine Blades</i>, 
+													by Nicolas Schneider</li>
 												</ul>
 										</div>
 									
@@ -439,7 +478,7 @@
 											<h4>Winter Term 2021/22, BHT</h4>
 												<ul>
 													<li>Co-supervision Bachelor's Thesis: <i>Machine Learning Methods for the Localization and Classification of Insects in Images</i>, 
-													by Mr. Philipp Zettl</li>
+													by Philipp Zettl</li>
 												</ul>
 										</div>
 									</div>							
